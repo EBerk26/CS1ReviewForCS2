@@ -1,6 +1,6 @@
 public class ExtraChallenge {
     public static void main(String[] args) {
-
+        //Pattern 11 - 4 LOC
         System.out.println("Pattern 11");
         newLine();
         for (int x = 1; x <= 5; x++) {
@@ -9,54 +9,43 @@ public class ExtraChallenge {
             }
             newLine();
         }
+
         newLine();
 
-        //Pattern 9
+        //Pattern 9 - 6 LOC
         System.out.println("Pattern 9");
         newLine();
-        int numberOfStars = 1;
-        int additionDeterminer = 4;
-        int amountToAdd;
-        while (numberOfStars > 0) {
-            if (additionDeterminer > 0) {
-                amountToAdd = 2;
-            } else {
-                amountToAdd = -2;
+        for(int x =1; x<=9; x++){
+            for(int y =1;y<=Math.abs(x-5);y++){
+                System.out.print(" ");
             }
-            for (int z = 1; z <= 2; z++) {
-                for (int y = 1; y <= (9 - numberOfStars) / 2; y++) {
-                    System.out.print(" ");
-                }
-                if (z == 1) {
-                    for (int y = 1; y <= numberOfStars; y++) {
-                        System.out.print("*");
-                    }
-                }
+            for (int y =1; y<=9-2*Math.abs(x-5);y++){
+                System.out.print("*");
             }
-            numberOfStars += amountToAdd;
-            additionDeterminer -= 1;
             newLine();
         }
+
         newLine();
-        //Pattern 10
+        //Pattern 10 - 11 LOC
         System.out.println("Pattern 10");
         newLine();
-        for (int numOfSpaces = 7; numOfSpaces >= -7; numOfSpaces -= 2) {
-            if (numOfSpaces == -1) {
-                System.out.println("    *    "); //this sort of feels like cheating...
-            }
-            for (int x = 1; x <= 3.5 - Math.abs(numOfSpaces) / 2; x++) {
+        for(int x=1;x<=9;x++){
+            for(int y = 1; y<=4-Math.abs(x-5);y++){
                 System.out.print(" ");
             }
             System.out.print("*");
-            for (int x = 1; x <= Math.abs(numOfSpaces); x++) {
-                System.out.print(" ");
+            if(2*(Math.abs(x-5)-1)<0){
+                newLine();
+            } else {
+                for (int y = 1; y <= 2*(Math.abs(x-5))-1; y++) {
+                    System.out.print(" ");
+                }
+                System.out.print("*");
+                newLine();
             }
-            System.out.print("*");
-            newLine();
         }
         newLine();
-        //Pattern 13
+        //Pattern 13 - 6 LOC
         System.out.println("Pattern 13");
         for (int x = 5; x >= 1; x--) {
             for (int y = 0; y < 5-x; y++) {
@@ -68,8 +57,8 @@ public class ExtraChallenge {
             newLine();
         }
         newLine();
-        System.out.println("Pattern 12");
 
+        System.out.println("Pattern 12"); //8 LOC
         for(int x =16;x>=0;x-=4){
             for(int z = 1; z<=2; z++) {
                 for (int y = 1; y <= 5 - x / 4; y++) {
