@@ -32,62 +32,62 @@ public class JavaBeansAndBytes {
         }
         System.out.println("We were founded in " + yearFounded + ".");
 
-        // TODO
-        // Update the year founded and print the new yearFounded in a sentence
+        yearFounded = 2000;
+        System.out.println("Updated founding year: "+yearFounded);
 
         // Calling methods
         randomDiscount();
-        // TODO
-        // Add parameter to specialOfTheDay (drink of your choice)
-        specialOfTheDay();
+        specialOfTheDay("strawberry mint soda");
         countCups();
+        System.out.println("Congrats! You are the lucky winner of a "+randomDiscount()+"% discount!");
         baristasChoice();
 
-        // TODO
-        // Create two CoffeeDrink objects
 
-        // TODO
-        // Print out the order details
+        CoffeeDrink flatWhite = new CoffeeDrink(3,"flat white",false);
+        CoffeeDrink englishBreakfast = new CoffeeDrink(2,"English Breakfast tea latte",true);
+
+        flatWhite.printInfo();
+        englishBreakfast.printInfo();
 
 
     }
 
     // Method to generate a random discount
-    public void randomDiscount() {
-        // TODO
-        // Make this method generate a random integer discount (0-30%)
-        // and print the result.
+    public int randomDiscount() {
+        return((int)(Math.random()*31));
     }
 
     // Method with a parameter for the special of the day
-    public void specialOfTheDay() {
-        // TODO
-        // Make this method accept a parameter representing the day’s special.
-        // Print the day's special.
+    public void specialOfTheDay(String todaysSpecial) {
+        System.out.println("Today's special is "+todaysSpecial+".");
     }
 
     // Method to show loops
     public void countCups() {
         System.out.println("Counting cups sold today:");
-
-        // TODO
-        // Write three different for loops that print the indicated numbers:
-
-        // Print 1 to 5
-
-
-        // Print 2, 5, 8, 11
-
-
-        // Print 8 to 0
-
+        for(int x =1;x<=5;x++){
+            System.out.println(x);
+        }
+        for(int x =2;x<=11;x+=3){
+            System.out.println(x);
+        }
+        for(int x =8;x>=0;x--){
+            System.out.println(x);
+        }
     }
 
     // Method to recommend a coffee based on a random number
     public void baristasChoice() {
-        // TODO
-        // Make this method generate a random decimal between 0 and 1
-        // and print one of four drink recommendations based on its value.
+        double chooser = Math.random();
+        if (chooser<0.3){
+            System.out.println("Barry the barista recommends the iced mango drinking chocolate.");
+        } else if (chooser<0.6){
+            System.out.println("Barry the barista recommends a candy cane mocha frappuchino.");
+        } else if (chooser<0.9){
+            System.out.println("Barry the barista recommends a blueberry muffin and frothed milk with a touch of sugar and vanilla.");
+        } else {
+            System.out.println("Barry the barista recommends water.");
+        }
     }
 }
 
