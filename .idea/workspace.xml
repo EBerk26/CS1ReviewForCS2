@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc016c7f-a394-4c21-b484-7c34201eb1c7" name="Changes" comment="saving to git because I forgot to earlier">
+    <list default="true" id="dc016c7f-a394-4c21-b484-7c34201eb1c7" name="Changes" comment="9/13 - I'm pretty happy about most of my challenge problem solutions - All but one are under 8 lines of code (though they are all more due to readable indenting practices)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ExtraChallenge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExtraChallenge.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +87,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726256380964</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="9/13 - I'm pretty happy about most of my challenge problem solutions - All but one are under 8 lines of code (though they are all more due to readable indenting practices)">
+      <option name="closed" value="true" />
+      <created>1726263563420</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726263563420</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -96,6 +103,7 @@
     <MESSAGE value="First commit?" />
     <MESSAGE value="Add CoffeeDrink class" />
     <MESSAGE value="saving to git because I forgot to earlier" />
-    <option name="LAST_COMMIT_MESSAGE" value="saving to git because I forgot to earlier" />
+    <MESSAGE value="9/13 - I'm pretty happy about most of my challenge problem solutions - All but one are under 8 lines of code (though they are all more due to readable indenting practices)" />
+    <option name="LAST_COMMIT_MESSAGE" value="9/13 - I'm pretty happy about most of my challenge problem solutions - All but one are under 8 lines of code (though they are all more due to readable indenting practices)" />
   </component>
 </project>

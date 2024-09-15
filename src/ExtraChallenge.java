@@ -26,7 +26,7 @@ public class ExtraChallenge {
         }
 
         newLine();
-        //Pattern 10 - 11 LOC
+        //Pattern 10 - 9 LOC
         System.out.println("Pattern 10");
         newLine();
         for(int x=1;x<=9;x++){
@@ -34,16 +34,15 @@ public class ExtraChallenge {
                 System.out.print(" ");
             }
             System.out.print("*");
-            if(2*(Math.abs(x-5)-1)<0){
-                newLine();
-            } else {
+            if(2*(Math.abs(x-5)-1)>=0){
                 for (int y = 1; y <= 2*(Math.abs(x-5))-1; y++) {
                     System.out.print(" ");
                 }
                 System.out.print("*");
-                newLine();
             }
+            newLine();
         }
+
         newLine();
         //Pattern 13 - 6 LOC
         System.out.println("Pattern 13");
