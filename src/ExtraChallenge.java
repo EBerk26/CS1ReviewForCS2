@@ -55,18 +55,17 @@ public class ExtraChallenge {
             }
             newLine();
         }
+
         newLine();
 
-        System.out.println("Pattern 12"); //8 LOC
+        System.out.println("Pattern 12"); //7 LOC
         for(int x =16;x>=0;x-=4){
             for(int z = 1; z<=2; z++) {
                 for (int y = 1; y <= 5 - x / 4; y++) {
                     System.out.print("# ");
                 }
-                if(z==1){
-                    for (int y = 1; y <= x; y++) {
+                for (int y = 1; y <= x; y++) {
                     System.out.print(" ");
-                    }
                 }
             }
             newLine();
